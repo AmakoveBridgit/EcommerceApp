@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BridgitSokogarden</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="theme_options">
+        <item>System Default</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+</resources>

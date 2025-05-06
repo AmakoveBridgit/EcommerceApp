@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thrifted clothes"
+        android:background="@drawable/shape"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Sign Up"
+            android:textSize="16sp"
+            android:backgroundTint="#f0f7f3"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Sign In"
+            android:textSize="16sp"
+            android:backgroundTint="#9cdbc1"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="8dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+
+
+        android:id="@+id/about"
+        android:backgroundTint="#f5f4e9"
+        android:textColor="@color/black"
+        android:layout_marginLeft="100dp"
+
+
+        android:layout_width="200dp"
+
+
+        android:layout_height="wrap_content"
+
+
+        android:text="TextToSpeech" />
+
+
+
+    <Button
+
+
+        android:id="@+id/btnSpeak"
+        android:backgroundTint="#f5f4e9"
+        android:textColor="@color/black"
+        android:layout_marginLeft="100dp"
+
+
+
+        android:layout_width="200dp"
+
+
+        android:layout_height="wrap_content"
+
+
+        android:text="SpeechToText" />
+
+
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Search products..."
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:paddingHorizontal="25dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginBottom='30dp' />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Only one of these should be visible at a time -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/single_item" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph" />
+
+
+
+    </FrameLayout>
+
+
+    <!-- RecyclerView -->
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f7f3"
+        android:layout_marginBottom="2dp"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,70 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="8dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#c5fae4"
+        android:gravity="center">
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/txtProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Product Cost -->
+        <TextView
+            android:id="@+id/txtProductCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ksh 0"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Phone Input -->
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone (254XXXXXXXX)"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000"
+            android:textColorHint="#888888"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Pay Button -->
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAY NOW"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

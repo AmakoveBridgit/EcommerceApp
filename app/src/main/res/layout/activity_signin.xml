@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+
+        android:id="@+id/email"
+
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="15dp"
+
+
+        android:layout_marginTop="35dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:id="@+id/password"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/signin"
+        android:padding="15dp"
+        android:layout_marginTop="60dp"
+        android:textSize="20dp"
+        android:backgroundTint="#000000"/>
+
+
+
+
+</LinearLayout>
