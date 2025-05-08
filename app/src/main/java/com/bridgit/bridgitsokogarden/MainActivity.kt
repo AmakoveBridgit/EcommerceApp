@@ -109,8 +109,8 @@ class MainActivity : AppCompatActivity() {
                     startActivity(Intent(this, SettingsActivity::class.java))
                     true
                 }
-                R.id.nav_search -> {
-                    startActivity(Intent(this, SearchActivity::class.java))
+                R.id.nav_help -> {
+                    startActivity(Intent(this, HelpActivity::class.java))
                     true
                 }
                 else -> false

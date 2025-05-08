@@ -1,56 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:background="@color/white"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:id="@+id/splashRoot"
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Soko Garden"
-        android:layout_margin="50dp"
-        android:textSize="45dp"
-        android:textStyle="normal"
-        android:fontFamily="sans-serif-condensed"
-        android:textColor="#40c4ff"
-        android:textAlignment="center"/>
-
-
-    <ProgressBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/progressbar"
-        android:layout_marginTop="10dp"
-        />
-
+    <!-- Background Image -->
     <ImageView
         android:id="@+id/splashImage"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginLeft="53dp"
-        android:src="@drawable/yoghurt"
-        android:layout_centerInParent="true"
-        android:scaleType="centerCrop"/>
-
-    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Developed by Bree"
-        android:layout_margin="50dp"
-        android:textSize="30dp"
-        android:textStyle="normal"
-        android:fontFamily="sans-serif-condensed"
-        android:textColor="#40c4ff"
-        android:textAlignment="textEnd"/>
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fash" />
+
+    <!-- Overlay Content -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Soko Garden"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Embrace the confidence,step out,own your look and let your style speak for you.."
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
 
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed by Bree"
 
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginTop="250dp" />
+    </LinearLayout>
 
-</LinearLayout>
+</FrameLayout>

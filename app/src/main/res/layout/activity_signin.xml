@@ -14,6 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign In"
+        android:fontFamily="serif"
+
         android:textStyle="bold"
         android:textSize="25dp"
         android:layout_marginTop="30dp"
@@ -25,6 +27,8 @@
         android:layout_height="wrap_content"
         android:hint="Enter your email"
         android:inputType="textEmailAddress"
+        android:fontFamily="serif"
+
 
         android:id="@+id/email"
 
@@ -40,18 +44,23 @@
         android:hint="Enter your password"
         android:inputType="textPassword"
         android:padding="12dp"
+        android:fontFamily="serif"
+
         android:id="@+id/password"
         android:layout_marginTop="40dp"/>
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Sign In"
+        android:layout_gravity="center"
         android:id="@+id/signin"
+        android:fontFamily="serif"
         android:padding="15dp"
         android:layout_marginTop="60dp"
         android:textSize="20dp"
-        android:backgroundTint="#000000"/>
+        android:textColor="@color/black"
+        android:backgroundTint="#c5e0d5"/>
 
 
 

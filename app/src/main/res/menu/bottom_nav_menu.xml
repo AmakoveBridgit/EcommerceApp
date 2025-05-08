@@ -14,9 +14,9 @@
             android:title="Settings"/>
 
         <item
-            android:id="@+id/nav_search"
-            android:icon="@drawable/search"
-            android:title="Search"/>
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help"
+            android:title="Support"/>
     </menu>
 
 

@@ -1,21 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SearchActivity">
+    android:padding="16dp"
+    android:background="#ffffff">
 
-    <TextView
+    <!-- Search Bar (EditText) -->
+    <EditText
+        android:id="@+id/searchEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Search"
-        android:textSize="30dp"
-        android:textAlignment="center"
-        android:fontFamily="serif"
-        android:layout_marginTop="20dp"/>
+        android:hint="Search Products"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#000"
+        android:textColorHint="#888888"
+        android:layout_marginBottom="16dp"/>
 
+    <!-- RecyclerView for displaying search results -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchResultsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false" />
 </LinearLayout>
